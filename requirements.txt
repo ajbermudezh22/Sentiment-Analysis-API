@@ -1,0 +1,13 @@
+# For Model Training 
+scikit-learn
+pandas
+joblib
+datasets
+
+# For API
+fastapi
+uvicorn[standard]
+
+# Testing
+pytest
+httpx
