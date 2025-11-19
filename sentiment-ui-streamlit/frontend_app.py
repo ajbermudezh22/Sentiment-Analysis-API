@@ -47,7 +47,9 @@ if submit_button:
                 else:
                     st.markdown(f"### 😞 Sentiment: **Negative**")
                 
-                st.metric(label="Confidence Score", value=f"{probability:.2%}")
+                # Display the confidence score for the predicted class
+                confidence_label = f"Confidence: {sentiment.capitalize()}"
+                st.metric(label=confidence_label, value=f"{probability:.2%}")
 
                 # Optional: Show a progress bar as a visual element
                 st.progress(probability)
